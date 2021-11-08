@@ -59,7 +59,7 @@ modelFilter.addEventListener("change", (e) => {
     filteredData = data.filter((obj) => obj.model === e.target.value);
   } else if (e.target.value === "All" && regionFilter.value !== "All") {
     filteredData = [...data];
-    filteredData = data.filter((obj) => obj.model === regionFilter.value);
+    filteredData = data.filter((obj) => obj.region === regionFilter.value);
   } else {
     filteredData = [...data];
     filteredData = filteredData.filter(
