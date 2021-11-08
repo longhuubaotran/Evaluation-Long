@@ -76,6 +76,12 @@ modelFilter.addEventListener("change", (e) => {
     </tr>
   `;
   });
+  table.innerHTML = `<tr>
+      <th>Region</th>
+      <th>Model</th>
+      <th>Sales</th>
+    </tr>
+    ${rows}`;
 });
 
 regionFilter.addEventListener("change", (e) => {
@@ -101,6 +107,12 @@ regionFilter.addEventListener("change", (e) => {
       </tr>
     `;
   });
+  table.innerHTML = `<tr>
+      <th>Region</th>
+      <th>Model</th>
+      <th>Sales</th>
+    </tr>
+    ${rows}`;
 });
 
 // render table
